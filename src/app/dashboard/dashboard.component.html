@@ -1,0 +1,27 @@
+<div>
+  <p>This is dashboard page. It has SimpleBar instantiated on it. Datepicker below causes browser to crash.</p>
+  <p>Tested: Chrome 63 and Latest Safari on MacOS</p>
+
+  <div>
+    <kendo-datepicker></kendo-datepicker>
+  </div>
+
+  <div style="margin: 20px;height: 50px; width: 200px; border: 1px solid #eee"  appSimpleBar>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+    <div>SIMPLEBAR CONTENT</div>
+  </div>
+
+  <p>This datepicker uses popupSettings appendTo: 'component' and it works fine and not causing browser to crash</p>
+  <div>
+    <kendo-datepicker [popupSettings]="{appendTo: 'component'}"></kendo-datepicker>
+  </div>
+</div>
+
